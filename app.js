@@ -15,6 +15,10 @@ app.use(cors({
 
 app.use(express.json())
 
+app.get('/', (req, res) => {
+    res.send("Hello Word - This is the home page")
+})
+
 app.use('/api/', apiRoute)
 
 app.listen(PORT, () => {
