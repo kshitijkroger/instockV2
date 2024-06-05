@@ -2,29 +2,17 @@
   "name": "kroger_snow_bridge",
   "version": "1.0.0",
   "description": "Kroger to ServiceNow Bridge API for Azure Bot",
-  "main": "index.js",
+  "main": "app.js",
   "type": "module",
   "scripts": {
-    "build": "",
-    "test": "",
-    "dev": "nodemon app.js -e js",
-    "start": "nodemon app.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kshitijkroger/instock_test.git"
+    "start": "node app.js"
   },
   "author": "Kshitij Raj",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kshitijkroger/instock_test/issues"
-  },
-  "homepage": "https://github.com/kshitijkroger/instock_test#readme",
   "dependencies": {
     "axios": "^1.7.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "nodemon": "^3.1.3"
+    "express": "^4.19.2"
   }
 }
