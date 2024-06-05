@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "nodemon app.js -e js",
+    "test": "nodemon app.js -e js",
     "dev": "nodemon app.js -e js",
     "start": "nodemon app.js"
   },
