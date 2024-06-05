@@ -7,7 +7,7 @@ dotenv.config();
 
 const app = express();
 
-const PORT = 80;
+const PORT = 443;
 
 app.use(cors({
     origin: '*'
