@@ -9,7 +9,11 @@ const app = express();
 const PORT = 8080;
 
 app.get('/test', (req, res) => {
-    res.send("Hello Word - This is the home page")
+    res.send("Testing with new changes")
+})
+
+app.get('/anotherRoute', (req,res) => {
+    res.send("Another route created!")
 })
 
 app.use('/api/', apiRoute)
