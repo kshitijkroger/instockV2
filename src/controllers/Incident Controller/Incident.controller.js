@@ -17,10 +17,10 @@ const Incident = async (req, res) => {
         else if (incidentNumber === 'INC6050882')
             res.send(INC6050882)
         else 
-            res.send({})
+            res.send({})    //Error
 
     } catch (err) {
-        console.log(err);
+        // console.log(err);
         res.send(err);
     }
 }
