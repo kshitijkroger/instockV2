@@ -1,5 +1,4 @@
 import express from 'express';
-import cors from 'cors';
 import apiRoute from './src/routes/api.js'
 import dotenv from 'dotenv';
 
@@ -7,13 +6,7 @@ dotenv.config();
 
 const app = express();
 
-const PORT = 443;
-
-app.use(cors({
-    origin: '*'
-}));
-
-app.use(express.json())
+const PORT = 8080;
 
 app.get('/test', (req, res) => {
     res.send("Hello Word - This is the home page")
