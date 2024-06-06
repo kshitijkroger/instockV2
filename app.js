@@ -1,8 +1,5 @@
 import express from 'express';
 import apiRoute from './src/routes/api.js'
-import dotenv from 'dotenv';
-
-dotenv.config();
 
 const app = express();
 
