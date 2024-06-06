@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Kroger to ServiceNow Bridge API for Azure Bot",
   "main": "app.js",
-  "type": "module",
   "scripts": {
     "start": "node app.js"
   },
@@ -11,8 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^1.7.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
     "express": "^4.19.2"
   }
 }
