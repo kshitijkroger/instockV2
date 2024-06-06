@@ -1,17 +1,19 @@
 import express from 'express';
+import cors from 'cors';
 import apiRoute from './src/routes/api.js'
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const app = express();
 
-const PORT = 8080;
+const PORT = process.env.PORT || 5000;
 
-app.get('/test', (req, res) => {
-    res.send("Testing with new changes")
-})
+app.use(cors({
+    origin: '*'
+}));
 
-app.get('/anotherRoute', (req,res) => {
-    res.send("Another route created!")
-})
+app.use(express.json())
 
 app.use('/api/', apiRoute)
 
