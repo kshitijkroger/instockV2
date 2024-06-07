@@ -4,7 +4,11 @@ import Incident from '../controllers/Incident Controller/Incident.controller.js'
 const apiRoute = express.Router();
 
 apiRoute.get('/test', (req, res) => {
-    res.send("Application Tested successfully!")
+    const response = {
+        statusCode: 200,
+        responseMessage: "Application Tested successfully!"
+    };
+    res.send(response);
 })
 
 apiRoute.get('/incident/:incidentNumber', Incident);
