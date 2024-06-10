@@ -7,7 +7,7 @@ const Incident = async (req, res) => {
 
     try {
         if(incidentNumber === 'INC6070530')
-            res.send(INC6070530.result[0]);
+            res.send(INC6070530.result[0].work_notes);
         else if (incidentNumber === 'INC6028019')
             res.send(INC6028019.result[0])
         else if (incidentNumber === 'INC6050882')
