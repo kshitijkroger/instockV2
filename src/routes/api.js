@@ -11,6 +11,13 @@ apiRoute.get('/test', (req, res) => {
     res.send(response);
 })
 
-apiRoute.get('/incident/:incidentNumber', Incident);
+apiRoute.get('/incident/:incidentNumber', async (req, res) => {
+    const incidentDetails = await Incident(req.params['incidentNumber'].toUpperCase());
+
+    if (incidentDetails.statusCode === 200)
+        res.render('IncidentDetail.ejs', incidentDetails.data)
+    else
+        res.send("Error")
+});
 
 export default apiRoute;
